@@ -1,0 +1,24 @@
+import { Link } from "react-router-dom";
+import axios from 'axios';
+import React, { useState, useEffect } from "react";
+ 
+
+
+
+const SearchBar = () => (
+
+    <form action="/" method="get">
+        <label htmlFor="header-search">
+            <span className="visually-hidden">Search blog posts</span>
+        </label>
+        <input
+            type="text"
+            id="header-search"
+            placeholder="Search blog posts"
+            name="s" 
+        />
+        <button type="submit">Search</button>
+    </form>
+);
+
+export default SearchBar;
